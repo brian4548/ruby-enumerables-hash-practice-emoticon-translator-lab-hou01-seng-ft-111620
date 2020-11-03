@@ -9,7 +9,7 @@ def load_library(yaml)
 end
 
 def get_english_meaning(yaml, japanese_emoticon)
-    lib = load_library(yaml)
+  lib = load_library(yaml)
     lib.each do |key, value|
     if japanese_emoticon == value[:japanese]
       return key
@@ -20,7 +20,7 @@ else
 end
     
 def get_japanese_emoticon(yaml, english_emoticon)
-    lib = load_library(yaml)
+  lib = load_library(yaml)
     lib.each do |key, value|
     if english_emoticon == value[:english]
       return key
