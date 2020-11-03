@@ -23,7 +23,7 @@ def get_japanese_emoticon(yaml, english_emoticon)
     lib.each do |key, value|
       v1,v2 = value
     if english_emoticon == value[:english]
-      return v2
+      return v1
     end
   end 
  
