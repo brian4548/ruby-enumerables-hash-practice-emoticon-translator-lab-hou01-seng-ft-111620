@@ -22,7 +22,7 @@ end
 def get_japanese_emoticon(yaml, english_emoticon)
     lib = load_library(yaml)
     lib.each do |key, value|
-    if japanese_emoticon == value[:english]
+    if english_emoticon == value[:english]
       return key
     else
       return "Sorry, that emoticon was not found"
