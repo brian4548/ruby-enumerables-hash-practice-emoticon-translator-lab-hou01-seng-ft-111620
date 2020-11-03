@@ -22,8 +22,6 @@ def get_japanese_emoticon(yaml, english_emoticon)
     lib.each do |key, value|
     if english_emoticon == value[:english]
       return key
-    else
-      return "Sorry, that emoticon was not found"
     end
   end 
 end
